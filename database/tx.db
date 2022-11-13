@@ -1,3 +1,5 @@
-{"from":"binh","to":"an","value":3,"data":""}
-{"from":"an","to":"binh","value":3,"data":""}
-{"from":"binh","to":"thu","value":1000,"data":""}
+{"from":"john","to":"john","value":3,"data":""}
+{"from":"john","to":"john","value":700,"data":"reward"}
+{"from":"john","to":"jack","value":2000,"data":""}
+{"from":"john","to":"john","value":100,"data":"reward"}
+{"from":"jack","to":"john","value":1,"data":""}

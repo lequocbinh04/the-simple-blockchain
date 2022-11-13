@@ -7,18 +7,18 @@ import (
 )
 
 func main() {
-	var tsbCmd = &cobra.Command{
-		Use:   "tsb",
-		Short: "The Simple Blockchain CLI",
+	var tbbCmd = &cobra.Command{
+		Use:   "tbb",
+		Short: "The Blockchain Bar CLI",
 		Run: func(cmd *cobra.Command, args []string) {
 		},
 	}
 
-	tsbCmd.AddCommand(versionCmd)
-	tsbCmd.AddCommand(balancesCmd())
-	tsbCmd.AddCommand(txCmd())
+	tbbCmd.AddCommand(versionCmd)
+	tbbCmd.AddCommand(balancesCmd())
+	tbbCmd.AddCommand(txCmd())
 
-	err := tsbCmd.Execute()
+	err := tbbCmd.Execute()
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
